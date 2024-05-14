@@ -1,0 +1,21 @@
+
+{
+    "profile"     : "AWSLambda",
+    "region"      : "us-east-1",
+    "configuration" : "Release",
+    "s3-prefix"     : "CloudflareDDNSApiProxy/",
+    "framework"     : "net8.0",
+    "function-name" : "cloudflareddns",
+    "function-description" : "Simple proxy to put Cloudflare DDNS Requests ",
+    "package-type"         : "Zip",
+    "function-handler"     : "CloudflareDDNSApiProxy",
+    "function-memory-size" : 256,
+    "function-timeout"     : 10,
+    "function-runtime"     : "dotnet8",
+    "function-architecture" : "arm64",
+    "function-subnets"      : "",
+    "function-security-groups" : "",
+    "tracing-mode"             : "Active",
+    "environment-variables"    : "",
+    "image-tag"                : ""
+}
