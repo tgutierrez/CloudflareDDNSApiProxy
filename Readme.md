@@ -38,7 +38,9 @@ This webapi can be deployed standalone, containerized [^1] or using a Lambda (wh
 
 	{...from cloudflare respose...}
 
++ Headers
 
+	+ Authorization: (string) BASIC Authorization supported. For Cloudflare, create an API Key, put anything on the username and send the key as Password. [^4]
 ## Disclaimer
 
 Use As-Is, at your own risk. MIT License. 
@@ -46,3 +48,4 @@ Use As-Is, at your own risk. MIT License.
 [^1]: TODO
 [^2]: Sure, I could have done everything in API gateway, but hindsight is 2020...
 [^3]: Maybe one day I'll just get it from the API, using the name only...
+[^4]: This is awful but Omada Routers expects username:password. I could put the key in a secrets store on AWS, but I prefer the flexibility of this approach (easier to setup)
