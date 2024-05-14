@@ -21,7 +21,9 @@ This has a minimal webapi the proxies this API with a GET method that can be use
 This webapi can be deployed standalone, containerized [^1] or using a Lambda (which is what I did...) [^2]
 ## API
 
-## Cloudflare DNS [/cloudflare/{ZoneId}/dns_records/{DnsRecordId}{?ZoneId}&DnsRecordId,Ip,Domain,Proxy,Type}]
+## Cloudflare DNS 
+
+```/cloudflare/{ZoneId}/dns_records/{DnsRecordId}{?ZoneId}&DnsRecordId,Ip,Domain,Proxy,Type}```
 
 ### Update DNS Recod [GET]
 
